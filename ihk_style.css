@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --ihk-blue: #00549f;
+    --ihk-light-blue: #e6f0f9;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+@page {
+    size: A4;
+    margin: 2cm;
+    @bottom-right {
+        content: "Seite " counter(page) " von " counter(pages);
+        font-family: 'Inter', sans-serif;
+        font-size: 10pt;
+    }
+    @bottom-left {
+        content: "IHK München - Projektantrag";
+        font-family: 'Inter', sans-serif;
+        font-size: 10pt;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--ihk-blue);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.header-info {
+    text-align: right;
+    font-size: 10pt;
+    color: var(--ihk-blue);
+}
+
+h1 {
+    color: var(--ihk-blue);
+    font-size: 24pt;
+    margin-top: 0;
+    border-bottom: none;
+}
+
+h2 {
+    color: var(--ihk-blue);
+    font-size: 18pt;
+    border-bottom: 1px solid var(--ihk-blue);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: var(--ihk-blue);
+    font-size: 14pt;
+    margin-top: 20px;
+}
+
+p, li {
+    font-size: 11pt;
+    text-align: justify;
+}
+
+.project-theme {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    text-align: left;
+    font-size: 10pt;
+}
+
+th {
+    background-color: var(--ihk-light-blue);
+    color: var(--ihk-blue);
+    font-weight: bold;
+}
+
+.time-col {
+    width: 80px;
+    text-align: center;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: var(--ihk-light-blue);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid var(--ihk-blue);
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+    color: #666;
+}

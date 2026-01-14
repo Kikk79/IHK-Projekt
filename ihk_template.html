@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>IHK Projektantrag - Klaus</title>
+    <link rel="stylesheet" href="ihk_style.css">
+</head>
+<body>
+    <header>
+        <img src="https://wd-cooperation.com/wp-content/uploads/2020/08/wdcoop_logo2.jpg" alt="Logo" class="logo">
+        <div class="header-info">
+            Projektkurzbeschreibung<br>
+            IHK München
+        </div>
+    </header>
+
+    <main>
+        <h1>Projektantrag</h1>
+        
+        <div class="project-theme">
+            <strong>Thema:</strong><br>
+            Migration einer Server-Infrastruktur, Implementierung eines modernen Netzwerk- und Sicherheitssystems sowie Aufbau einer Container-basierten Automatisierungsplattform im Neubau unter Berücksichtigung kaufmännischer Aspekte.
+        </div>
+
+        <h2>1. Projektbeschreibung</h2>
+        <p>Das Unternehmen bezieht einen neuen Standort (Neubau). Die vorhandene IT-Infrastruktur am alten Standort ist veraltet und bietet nicht die benötigte Performance sowie Sicherheitsfeatures für den neuen Betrieb. Mein Auftrag umfasst die kaufmännische Planung, die technische Konzeption sowie die physische Umsetzung der neuen Netzwerkinfrastruktur.</p>
+        
+        <h3>Kernaufgaben:</h3>
+        <ul>
+            <li><strong>Kaufmännische Planung:</strong> Durchführung eines strukturierten Preis- und Angebotsvergleichs für alle Hardware-Komponenten (Ubiquiti, Lenovo, Reolink). Erstellung einer Kosten-Nutzen-Analyse zur Budgetabstimmung mit der Geschäftsführung.</li>
+            <li><strong>Netzwerkausstattung:</strong> Installation einer UniFi-basierten Infrastruktur (Dream Machine SE, 24-Port PoE Switch, Access Points) im Neubau. Einrichtung eines segmentierten Netzwerks mittels VLANs (Management, Video, IoT, Produktion).</li>
+            <li><strong>Überwachungslösung:</strong> Evaluation, Auswahl und Implementierung einer geeigneten Management-Software für die Reolink PoE-Kameras zur zentralen Videoüberwachung.</li>
+            <li><strong>Server-Modernisierung & Migration:</strong> Inbetriebnahme des Lenovo ThinkSystem SE350 Edge-Servers. Migration bestehender kritischer Dienste vom Altsystem auf die neue Hardware.</li>
+            <li><strong>Automatisierung:</strong> Implementierung eines n8n-Servers als Container (z.B. mittels Docker) auf dem Lenovo Server zur Automatisierung betrieblicher Prozesse.</li>
+        </ul>
+
+        <h2>2. Projektumfeld</h2>
+        <p>Die Umsetzung erfolgt direkt vor Ort im Neubau des Unternehmens (Rack-Installation). Die Migration und Konfiguration erfolgen unter Berücksichtigung maximaler Systemverfügbarkeit.</p>
+
+        <h2>3. Projektphasen mit Zeitplanung</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Projektphase / Tätigkeit</th>
+                    <th class="time-col">Zeit [h]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="2"><strong>3.1 Planungsphase</strong></td></tr>
+                <tr><td>Ist-Analyse & Soll-Konzept: Aufnahme der Anforderungen und Standortbesichtigung</td><td class="time-col">3</td></tr>
+                <tr><td>Kaufmännische Analyse: Hardware-Recherche, Angebotsvergleich und Wirtschaftlichkeitsberechnung</td><td class="time-col">3.5</td></tr>
+                <tr><td>Risikoanalyse: Identifikation von Projektrisiken (z.B. Migrationsfehler) und Erarbeitung von Ausfallkonzepten</td><td class="time-col">2.5</td></tr>
+                <tr><td>Technisches Design: Erstellung des VLAN-Konzepts und des Netzwerk-Topologieplans</td><td class="time-col">1.5</td></tr>
+                
+                <tr><td colspan="2"><strong>3.2 Realisierungsphase</strong></td></tr>
+                <tr><td>Netzwerk-Infrastruktur: Vorkonfiguration von Router und Switches sowie Einrichtung der VLAN-Segmente</td><td class="time-col">3.5</td></tr>
+                <tr><td>Hardware-Installation: Physischer Einbau im Rack und CAT-Verkabelung am Patchpanel</td><td class="time-col">3.5</td></tr>
+                <tr><td>Video- & WLAN-Setup: Montage der Reolink-Kameras und Konfiguration der Access Points</td><td class="time-col">3.5</td></tr>
+                <tr><td>Software-Evaluation: Vergleich und Auswahl der optimalen Surveillance-Software</td><td class="time-col">2.5</td></tr>
+                <tr><td>Server & Container: Setup der Container-Runtime und Bereitstellung des n8n-Containers</td><td class="time-col">3.5</td></tr>
+                <tr><td>Anbindung n8n an externe Dienste: Erstellung einer Dyndns Domain mit Let`s encrypt Certificat hinter einem nginx Server</td><td class="time-col">2</td></tr>
+                <tr><td>Migration: Überführung der Bestandsdienste und Daten auf das neue Edge-System</td><td class="time-col">3.5</td></tr>
+                <tr><td>Integration: Anbindung der Kameras an die gewählte Management-Software</td><td class="time-col">0.5</td></tr>
+
+                <tr><td colspan="2"><strong>3.3 Test- und Abnahmephase</strong></td></tr>
+                <tr><td>Abnahmetest: Prüfung der Funktionalität (Netzwerk-Durchsatz, Video-Feed, n8n-Workflows)</td><td class="time-col">2.5</td></tr>
+                <tr><td>Übergabe: Projektabnahme durch den Kunden und Einweisung in die neuen Systeme</td><td class="time-col">2</td></tr>
+
+                <tr><td colspan="2"><strong>3.4 Dokumentation</strong></td></tr>
+                <tr><td>Kundendokumentation: Erstellung von Übergabeunterlagen, Netzwerkplänen und Wartungshinweisen</td><td class="time-col">3.5</td></tr>
+                <tr><td>Wirtschaftlicher Abschluss: Finale Kostengegenüberstellung zum Angebot</td><td class="time-col">1</td></tr>
+                
+                <tr class="total-row">
+                    <td><strong>Gesamtaufwand</strong></td>
+                    <td class="time-col"><strong>40</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>4. Dokumentation zur Projektarbeit</h2>
+        <p>Es wird eine praxisorientierte Kundendokumentation erstellt, die das Pflichtenheft, Abnahmeprotokolle, Netzpläne und die tabellarische Hardware-Kalkulation enthält.</p>
+
+        <h2>Bewertung</h2>
+        <p>Dieses Projekt ist für die Abschlussprüfung hervorragend geeignet, da es die geforderten kaufmännischen Aspekte tiefgehend behandelt, moderne Technologien wie Containerisierung nutzt und alle Phasen der vollständigen Handlung abdeckt.</p>
+    </main>
+
+    <div class="footer">
+        <span>Klaus</span>
+        <span>Fachinformatiker für Systemintegration</span>
+    </div>
+</body>
+</html>
