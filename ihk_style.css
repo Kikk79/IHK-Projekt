@@ -1,29 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
-    --ihk-blue: #00549f;
+    --ihk-blue: #2F5496;
     --ihk-light-blue: #e6f0f9;
+    --ihk-grey: #F2F2F2;
     --text-color: #333;
     --border-color: #ccc;
 }
 
 @page {
     size: A4;
-    margin: 2cm;
-    @bottom-right {
-        content: "Seite " counter(page) " von " counter(pages);
-        font-family: 'Inter', sans-serif;
-        font-size: 10pt;
+    margin: 2.5cm 2cm 2cm 3cm;
+    
+    @top-left {
+        content: "IHK-PROJEKTANTRAG";
+        font-family: 'Arial', 'Inter', sans-serif;
+        font-size: 9pt;
+        font-weight: bold;
+        color: var(--ihk-blue);
     }
+    
+    @top-right {
+        content: "Fachinformatiker Systemintegration";
+        font-family: 'Arial', 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #666;
+    }
+    
     @bottom-left {
-        content: "IHK München - Projektantrag";
-        font-family: 'Inter', sans-serif;
-        font-size: 10pt;
+        content: "Klaus";
+        font-family: 'Arial', 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #666;
+    }
+    
+    @bottom-right {
+        content: "Seite " counter(page);
+        font-family: 'Arial', 'Inter', sans-serif;
+        font-size: 9pt;
+        color: #666;
     }
 }
 
+@page :first {
+    @top-left { content: none; }
+    @top-right { content: none; }
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Arial', 'Inter', sans-serif;
+    font-size: 11pt;
     line-height: 1.5;
     color: var(--text-color);
     margin: 0;
@@ -35,89 +65,152 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid var(--ihk-blue);
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .logo {
-    height: 60px;
+    height: 50px;
 }
 
 .header-info {
     text-align: right;
     font-size: 10pt;
     color: var(--ihk-blue);
+    font-weight: bold;
 }
 
 h1 {
-    color: var(--ihk-blue);
-    font-size: 24pt;
-    margin-top: 0;
-    border-bottom: none;
+    background-color: var(--ihk-blue);
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 0 -15px 20px -15px;
+    page-break-after: avoid;
 }
 
 h2 {
     color: var(--ihk-blue);
-    font-size: 18pt;
+    font-size: 14pt;
+    font-weight: bold;
     border-bottom: 1px solid var(--ihk-blue);
     padding-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    page-break-after: avoid;
 }
 
 h3 {
     color: var(--ihk-blue);
-    font-size: 14pt;
-    margin-top: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
 }
 
-p, li {
+p {
     font-size: 11pt;
     text-align: justify;
+    margin-bottom: 12pt;
+    orphans: 3;
+    widows: 3;
+}
+
+li {
+    font-size: 11pt;
+    text-align: left;
+    margin-bottom: 6pt;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+ul li {
+    padding-left: 5px;
 }
 
 .project-theme {
-    font-weight: bold;
-    font-size: 12pt;
+    background-color: var(--ihk-grey);
+    padding: 12px 15px;
+    font-size: 11pt;
     margin-bottom: 20px;
+    border-left: 4px solid var(--ihk-blue);
+}
+
+.project-theme strong {
+    color: var(--ihk-blue);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 10pt;
 }
 
 th, td {
     border: 1px solid var(--border-color);
-    padding: 8px;
+    padding: 8px 10px;
     text-align: left;
-    font-size: 10pt;
 }
 
 th {
-    background-color: var(--ihk-light-blue);
-    color: var(--ihk-blue);
+    background-color: var(--ihk-blue);
+    color: white;
     font-weight: bold;
 }
 
 .time-col {
-    width: 80px;
+    width: 70px;
     text-align: center;
 }
 
-.total-row {
+tr:nth-child(even) td {
+    background-color: var(--ihk-grey);
+}
+
+.phase-header td {
+    background-color: var(--ihk-light-blue) !important;
     font-weight: bold;
-    background-color: var(--ihk-light-blue);
+    color: var(--ihk-blue);
+}
+
+.total-row td {
+    background-color: var(--ihk-blue) !important;
+    color: white;
+    font-weight: bold;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid var(--ihk-blue);
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 9pt;
-    color: #666;
+    display: none;
+}
+
+main {
+    padding: 0 15px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.bewertung {
+    background-color: var(--ihk-light-blue);
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.bewertung ul {
+    margin-bottom: 0;
 }
