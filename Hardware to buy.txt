@@ -1,0 +1,7 @@
+Hardware to buy:
+- Unify Poe switch 24 x 2 (Preis: ca. 350,00 €/Stk. | Gesamt: 700,00 €) [Quelle: Idealo/Klarna]
+- Unify Router (Preis: ca. 454,00 €) [Modell: Dream Machine SE | Quelle: Heise/Geizhals]
+- Richtantennen 2x integrierter AP (Preis: ca. 120,00 € für Set) [Quelle: Idealo/Amazon]
+- 4x Reolink Camera POE Dual View (Preis: ca. 115,00 €/Stk. | Gesamt: 460,00 €) [Modell: Duo 2 PoE | Quelle: Proshop]
+- 4x Alexa (Preis: ca. 37,00 €/Stk. | Gesamt: 148,00 €) [Modell: Echo Dot 5 | Quelle: Geizhals]
+- 1x Lenovo SE350-edge-ai-server (Preis: ca. 1.099,00 € Refurbished / 2.430,00 € Neu) [Quelle: ServerShop24/Amazon]
